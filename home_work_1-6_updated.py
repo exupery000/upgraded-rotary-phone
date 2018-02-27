@@ -1,5 +1,6 @@
 import math
 
+print()
 # hw1
 a1 = 3
 b1 = 5
