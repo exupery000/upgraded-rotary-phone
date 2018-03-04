@@ -6,8 +6,8 @@ print("Задание 8 \n"
 print("Введите Имя и Фамилию студента")
 
 name_surename = input().split(" ", 1)
-a = name_surename[0]
-b = name_surename[1]
-list = [b, a]
+name = name_surename[0]
+surename = name_surename[1]
+list = [surename, name]
 print(' '.join(list))
 
