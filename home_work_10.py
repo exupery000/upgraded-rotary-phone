@@ -37,5 +37,5 @@ death_year = var3[0]
 live_year = int(death_year) - int(birth_year)
 
 # вывод финальной информации
-final = str(name_surename) + ", " + str(live_year)
+final = name_surename + ", " + str(live_year)
 print(final)
