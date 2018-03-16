@@ -3,7 +3,6 @@
 # Каждая окружность задается координатами центра и радиусом.
 # def circles_intersect(x1, y1, r1, x2, y2, r2): # returns boolean value
 #           pass
-#
 
 
 def circles_intersect(x1, y1, r1, x2, y2, r2):
