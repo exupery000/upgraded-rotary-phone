@@ -7,7 +7,11 @@
 
 
 def have_trains_crashed(v1, v2):
-    if v2 >= 1.5 * v1:
+    s1 = 4
+    s2 = 6
+    t1 = s1 / v1
+    t2 = s2 / v2
+    if t1 <= t2:
         return True
     else:
         return False
@@ -31,4 +35,4 @@ if have_trains_crashed(velocity1, velocity2):
     print('Столкновение неизбежно!!!')
 
 else:
-    print('Путь свободен. Двигайтесь с указанной скоростью')
+    print('Путь свободен. Двигайтесь с указанной скоростью.')
