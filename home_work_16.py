@@ -11,7 +11,7 @@ def have_trains_crashed(v1, v2):
     s2 = 6
     t1 = s1 / v1
     t2 = s2 / v2
-    if t1 <= t2:
+    if t1 >= t2:
         return True
     else:
         return False
