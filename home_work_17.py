@@ -11,7 +11,7 @@ def solve_quadratic_equation(a, b, c):
     if d > 0:
         x1 = (- b + math.sqrt(d)) / (2 * a)
         x2 = (- b - math.sqrt(d)) / (2 * a)
-        return x1, x2, print('2 values')
+        return x1, x2
 
     elif d == 0:
         x = (- b + math.sqrt(d)) / (2 * a)
@@ -32,4 +32,12 @@ b = int(input('Enter "b": '))
 c = int(input('Enter "c": '))
 
 res1, res2 = solve_quadratic_equation(a, b, c)
-print(res1, res2)
+# print(res1, res2)
+
+if res1 == None and res2 == None:
+    print('Нет корней!')
+
+elif res2 == None:
+    print('Один корень, х =', res1)
+else:
+    print('Два корня, x1 = %.4f, x2 = %.4f' % (res1, res2))
