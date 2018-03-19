@@ -5,12 +5,18 @@
 
 import math
 
+
 def solve_quadratic_equation(a, b, c):
-    d = b**2 - 4 * a * c
-    x1 = (- b + math.sqrt(d)) / 2 * a
-    x2 = (- b - math.sqrt(d)) / 2 * a
+    d = b ** 2 - 4 * a * c
     if d > 0:
-        return
+        x1 = (- b + math.sqrt(d)) / (2 * a)
+        x2 = (- b - math.sqrt(d)) / (2 * a)
+        return x1, x2, print('2 values')
+
+    elif d == 0:
+        x = (- b + math.sqrt(d)) / (2 * a)
+        return x, None
+
     else:
         return None, None
 
@@ -21,11 +27,9 @@ print('Задание 17'
       '\n       pass'
       '\n')
 
-
 a = int(input('Enter "a": '))
 b = int(input('Enter "b": '))
 c = int(input('Enter "c": '))
 
-
-x1, x2 = solve_quadratic_equation(a, b, c)
-print(x1, x2)
+res1, res2 = solve_quadratic_equation(a, b, c)
+print(res1, res2)
