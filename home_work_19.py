@@ -18,9 +18,7 @@ def diff_min_max(num_limit, lower_bound, upper_bound):
             curr_min = rand_num
         if curr_max < rand_num:
             curr_max = rand_num
-    print()
     print('Min = %d, Max = %d' % (curr_min, curr_max))
-
     result = curr_max - curr_min
     return result
 
