@@ -14,15 +14,15 @@ print('Задание 21'
 
 
 def get_max_digit(number):
-    min_num = 0
+    max_num = 0
     print('Введенное / сгенерированное число: ', number)
     for num in str(number):
         # print(num)
-        if min_num < int(num):
-            min_num = int(num)
+        if max_num < int(num):
+            max_num = int(num)
         # print(min_num)
         # print()
-    return min_num
+    return max_num
 
 
 number = int(input('Enter number: '))
