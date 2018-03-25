@@ -18,10 +18,10 @@ print('Задание 23'
       '\nПосчитайте, начиная с какой клетки по счету, общее количество зерен,'
       '\nкоторое должен был бы отдать раджа изобретателю было больше 1 000 000 зерен'
       '\nи сколько конкретно зерен он должен был бы отдать.'
+      '\n'
       '\ndef chess_reward(): # returns 2 ints (cell number and total number of corns)'
       '\n       pass'
       '\n')
-
 
 
 def chess_reward():
@@ -38,20 +38,20 @@ def chess_reward():
     print()
     cell_number = 0
     cur_number_of_corns = 0
-    total_number_of_corns =0
+    total_number_of_corns = 0
     for i in range(1, 8 + 1):
-            for j in range(1, 8 + 1):
-                cur_number_of_corns = 2 ** cell_number
-                cell_number += 1
-                total_number_of_corns += cur_number_of_corns
-                print('Номер клетки: %d, '
-                      'колличество зерен на клетке: %d, '
-                      'общее колличество зерен в этот момент: %d' %
-                      (cell_number, cur_number_of_corns, total_number_of_corns))
-                if total_number_of_corns >= 1000000:
-                    print('Вот он! Момент "М"')
-                    print()
-                    return cell_number, total_number_of_corns
+        for j in range(1, 8 + 1):
+            cur_number_of_corns = 2 ** cell_number
+            cell_number += 1
+            total_number_of_corns += cur_number_of_corns
+            print('Номер клетки: %d, '
+                  'колличество зерен на клетке: %d, '
+                  'общее колличество зерен в этот момент: %d' %
+                  (cell_number, cur_number_of_corns, total_number_of_corns))
+            if total_number_of_corns >= 1000000:
+                print('Вот он! Момент "М"')
+                print()
+                return cell_number, total_number_of_corns
 
 
 res1, res2 = chess_reward()
