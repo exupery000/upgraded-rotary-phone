@@ -63,7 +63,7 @@ def group_by_surname(full_names_lst):
             group_q_t = group_q_t + 1
             group_q_t_lst = group_q_t_lst + full_names + ', '
 
-        else:
+        elif 'U' <= first_symbol <= 'Z':
             group_u_z = group_u_z + 1
             group_u_z_lst = group_u_z_lst + full_names + ', '
 
