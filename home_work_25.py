@@ -43,3 +43,48 @@ print('Сравним сами списки'
 print('------------------------')
 print('Новый'
       '\n', lst)
+
+print('------------------------')
+print('------------------------')
+print('------------------------')
+import random
+
+lst = [i for i in range(1, 100) if i % 2 != 0]
+print(lst)
+print(id(lst))
+
+
+def shuffle_list(list_to_shuffle):
+    for element in list_to_shuffle:
+        first_random_index = random.randint(0, len(list_to_shuffle) - 1)
+        second_random_index = random.randint(0, len(list_to_shuffle) - 1)
+        list_to_shuffle[first_random_index], list_to_shuffle[second_random_index] = list_to_shuffle[
+                                                                                        second_random_index], \
+                                                                                    list_to_shuffle[first_random_index]
+    return list_to_shuffle
+
+
+print('--------------------------')
+print(shuffle_list(lst))
+print(len(lst))
+print(id(lst))
+
+
+print('------------------------')
+print('------------------------')
+print('------------------------')
+
+import random
+
+lst = [i for i in range(1, 100) if i % 2 != 0]
+print(lst)
+print(id(lst))
+
+sequence_number = len(lst)
+while sequence_number > 1:
+    sequence_number = sequence_number - 1
+    rand_number = random.randint(0, sequence_number)
+    lst[rand_number], lst[sequence_number] = lst[sequence_number], lst[rand_number]
+
+print(lst)
+print(id(lst))
