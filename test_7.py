@@ -2,10 +2,10 @@
 
 
 def fibonachi_nums(num):
-    group1 = 0
+    group1 = -1
     group2 = 1
     fibonachi_sum = 0
-    for i in range(num):
+    for i in range(num + 1):
         curent = group1 + group2
         group1 = group2
         group2 = curent
