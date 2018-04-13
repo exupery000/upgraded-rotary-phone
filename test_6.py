@@ -11,6 +11,8 @@
 def is_isogramm(word):
     comparison_lst = []
     for letter in word:
+        if letter == ' ':
+            comparison_lst.append(letter)
         if letter not in comparison_lst:
             comparison_lst.append(letter)
         # print(sample)
