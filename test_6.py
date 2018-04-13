@@ -17,7 +17,7 @@ def is_isogramm(word):
             comparison_lst.append(letter)
         # print(sample)
 
-    while len(comparison_lst) == len(word):
+    if len(comparison_lst) == len(word):
         return True
     else:
         return False
